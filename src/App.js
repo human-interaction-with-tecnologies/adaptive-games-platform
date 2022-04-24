@@ -1,11 +1,11 @@
-import styles from './globla.module.css'
-
+import './globla.module.css'
+import LandingPage from './pages/LandingPage/index'
 
 function App() {
   return (
-    <div className={styles.section}>
-      teste
-    </div>
+    <>
+      <LandingPage />
+    </>
   );
 }
 
