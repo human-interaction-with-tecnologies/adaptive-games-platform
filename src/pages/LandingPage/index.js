@@ -1,9 +1,13 @@
-
+import Header from "../../components/Header";
+import style from "./style.module.css"
 const LandingPage = () =>{
     return(
-        <section>
-            <h1>Teste</h1>
-        </section>
+        <>
+            <section className={style.introduction}>
+                <Header/>
+            </section>
+            
+        </>
     )
 }
 

@@ -1,0 +1,36 @@
+.nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 1100px;
+    margin:  0 auto;
+}
+
+.nav a{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    padding: 10px 15px;
+    color: #FFFFFF;
+}
+
+.nav a:hover{
+    background: #655BF5;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px 20px;
+    background: var(--green);
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #50D6DC;
+}

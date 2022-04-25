@@ -1,3 +1,6 @@
-.section{
+.introduction{
     font-family: 'Signika', sans-serif;
+    background-image: linear-gradient(var(--blue-secundary), var(--blue));
+
 }
+
