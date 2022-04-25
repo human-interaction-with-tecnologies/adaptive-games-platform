@@ -21,8 +21,6 @@ const Header = () =>{
         ButtonDiv.addEventListener('click', CloseMenuMobile);
     })
     
-    
-    
     console.log(mobileMenu)
     return (
         <>  
