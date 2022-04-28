@@ -1,7 +1,7 @@
 import Header from "../../components/Header";
 import style from "./style.module.css"
 import {ReactComponent as ImgPrincipalLP} from '../../assets/ImgPrincipalLP.svg'
-import {ReactComponent as ImgWavyEffect} from '../../assets/ImgWavyEffect.svg'
+import {ReactComponent as MascoteRitimoMania} from '../../assets/mascoteRitimoMania.svg'
 const LandingPage = () =>{
     return(
         <>
@@ -24,6 +24,46 @@ const LandingPage = () =>{
                     
                 </section>
                 
+            </section>
+
+            <section className={style.jogos}>
+                <h1>Jogos</h1>
+                <div className={style.quebracabeca}>
+                    <div className={style.titlePlay}>
+                        <span > </span>
+                        <h2>Quebra-Cabeça</h2>
+                    </div>
+                    <div className={style.characteristics}>
+                        <h3>Características</h3>
+                        <ul>
+                            <li>
+                                <span>01</span>
+                                <p>Raciocínio Lógico</p>
+                            </li>
+                            <li>
+                                <span>02</span>
+                                <p>Habilidades motoras finas</p>
+                            </li>
+                            <li>
+                                <span>03</span>
+                                <p>Memória</p>
+                            </li>
+                            <li>
+                                <span>04</span>
+                                <p>Reconhecimento de pessoas, animais e objetos</p>
+                            </li>
+                            <li>
+                                <span>05</span>
+                                <p>personalização das Imagens utilizadas do jogo</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div className={style.mascoteRitimoMania}>
+                        <MascoteRitimoMania/>
+                    </div>
+
+                </div>
             </section>
             
         </>
