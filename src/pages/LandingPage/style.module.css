@@ -137,7 +137,7 @@
 }
 
 
-/*setion de Jogos*/
+/*==============section de Jogos====================*/
 
 .jogos{
     max-width: 1200px;
@@ -156,6 +156,7 @@
     padding-left: 20px;
 }
 
+/*Quebra cabeça*/
 .quebracabeca{
     max-width: 1200px;
     width: 100%;
@@ -224,6 +225,11 @@
     color: #FFFFFF;
     border: none;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+.characteristics li button:hover{
+    background: rgba(91, 81, 232, 0.5);
 }
 
 .titlePlay{
@@ -246,12 +252,12 @@
     align-self: center
 }
 
-.mascoteRitimoMania{
+.mascoteQuebraCabeça{
     grid-area: Img;
     max-height: 650;
 }
 
-.mascoteRitimoMania > svg{
+.mascoteQuebraCabeça > svg{
     width: 100%;
 }
 
@@ -300,8 +306,166 @@
         padding-left: 10px;
     }
 
-    .mascoteRitimoMania > svg{
+    .mascoteQuebraCabeça > svg{
         height: 400px;
     }
 }
 
+/*Ritmo Mania*/
+
+.ritmoMania{
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "titlePlayRitmoMania none"
+    "imgRitimoMania characteristicsRitmoMania";
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.characteristicsRitmoMania{
+    grid-area: characteristicsRitmoMania;
+    align-items: center;
+    position: relative;
+    left: 40px;
+}
+
+.characteristicsRitmoMania h3{
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.characteristicsRitmoMania ul{
+    width: 100%;
+}
+
+.characteristicsRitmoMania li{
+    display: flex;
+    max-width: 390px;
+    width: 100%;
+    margin-bottom: 40px;
+    position: relative;
+    left: 30px;
+}
+
+.characteristicsRitmoMania li span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  var(--green);
+}
+
+.characteristicsRitmoMania li span::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--green);
+}
+
+.characteristicsRitmoMania li p{
+    font-size: 1.5rem;
+    margin-left: 20px;
+    align-self: center;
+}
+
+.characteristicsRitmoMania li button{
+    font-size: 1.625rem;
+    padding: 15px 35px;
+    width: 100%;
+    background: var(--green);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.characteristicsRitmoMania li button:hover{
+    background: rgba(41, 179, 182, 0.5);
+    
+}
+
+.titlePlayRitmoMania{
+    margin-top: 60px;
+    position: relative;
+    left: 20px;
+    display: grid;
+    justify-content: start;
+    grid-area: titlePlayRitmoMania;
+    position: relative;
+    font-size: 1.5rem;
+    display: flex;
+}
+
+
+
+.titlePlayRitmoMania span{
+    width: 20px;
+    height: 20px;
+    background: var(--green);
+    border-radius: 5px;
+    margin-right: 10px;
+    align-self: center
+}
+
+.mascoteRitimoMania{
+    grid-area: imgRitimoMania;
+    max-height: 650;
+}
+
+.mascoteRitimoMania > svg{
+    width: 100%;
+}
+
+
+@media (max-width: 891px) {
+    .ritmoMania{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "titlePlayRitmoMania"
+        "imgRitimoMania"
+        "characteristicsRitmoMania";
+    }
+
+    .characteristicsRitmoMania{
+        position: relative;
+        left: 0px;
+    }
+
+    .characteristicsRitmoMania h3{
+        padding-left: 40px;
+    }
+
+    .characteristicsRitmoMania li{
+        padding-left: 40px;
+    }
+
+
+
+    .characteristicsRitmoMania li span{
+        font-size: 1.275rem;
+    }
+
+}
+
+@media (max-width: 420px){
+
+    .characteristicsRitmoMania h3{
+        padding-left: 10px;
+    }
+
+    .characteristicsRitmoMania li{
+        width: 240px;
+        padding-left: 10px;
+    }
+
+    .mascoteRitimoMania > svg{
+        height: 400px;
+    }
+}

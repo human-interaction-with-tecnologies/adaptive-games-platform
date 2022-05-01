@@ -1,7 +1,8 @@
 import Header from "../../components/Header";
 import style from "./style.module.css"
 import {ReactComponent as ImgPrincipalLP} from '../../assets/ImgPrincipalLP.svg'
-import {ReactComponent as MascoteRitimoMania} from '../../assets/mascoteRitimoMania.svg'
+import {ReactComponent as MascoteQuebraCabeça} from '../../assets/mascoteQuebraCabeça.svg'
+import {ReactComponent as MascoteRitimoMania} from '../../assets/MascoteRitimoMania.svg'
 const LandingPage = () =>{
     return(
         <section className="Container">
@@ -55,6 +56,47 @@ const LandingPage = () =>{
                             <li>
                                 <span>05</span>
                                 <p>personalização das Imagens utilizadas do jogo</p>
+                            </li>
+                            <li>
+                                <button>Download</button>
+                            </li>
+                        </ul>
+                        
+                    </div>
+
+                    <div className={style.mascoteQuebraCabeça}>
+                        <MascoteQuebraCabeça/>
+                    </div>
+                </div>
+
+
+                <div className={style.ritmoMania}>
+                    <div className={style.titlePlayRitmoMania}>
+                        <span > </span>
+                        <h2>Ritmo Mania</h2>
+                    </div>
+                    <div className={style.characteristicsRitmoMania}>
+                        <h3>Características</h3>
+                        <ul>
+                            <li>
+                                <span>01</span>
+                                <p>Ritmo</p>
+                            </li>
+                            <li>
+                                <span>02</span>
+                                <p>Memória</p>
+                            </li>
+                            <li>
+                                <span>03</span>
+                                <p>Habilidades motoras finas</p>
+                            </li>
+                            <li>
+                                <span>04</span>
+                                <p>Refinamento da Audição</p>
+                            </li>
+                            <li>
+                                <span>05</span>
+                                <p>Reconhecimento de canções Populares</p>
                             </li>
                             <li>
                                 <button>Download</button>
