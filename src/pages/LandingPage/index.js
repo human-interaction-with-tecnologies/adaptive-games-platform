@@ -4,7 +4,7 @@ import {ReactComponent as ImgPrincipalLP} from '../../assets/ImgPrincipalLP.svg'
 import {ReactComponent as MascoteRitimoMania} from '../../assets/mascoteRitimoMania.svg'
 const LandingPage = () =>{
     return(
-        <>
+        <section className="Container">
             <section className={style.nav}>
                 <Header/>
 
@@ -56,17 +56,20 @@ const LandingPage = () =>{
                                 <span>05</span>
                                 <p>personalização das Imagens utilizadas do jogo</p>
                             </li>
+                            <li>
+                                <button>Download</button>
+                            </li>
                         </ul>
+                        
                     </div>
 
                     <div className={style.mascoteRitimoMania}>
                         <MascoteRitimoMania/>
                     </div>
-
                 </div>
             </section>
             
-        </>
+        </section>
     )
 }
 
