@@ -1,5 +1,5 @@
 .Container{
-    max-width: 1570px;
+    
     width: 100%;
     margin: 0 auto;
 }
@@ -298,7 +298,7 @@
     }
 
     .characteristics h3{
-        padding-left: 10px;
+        padding-left: 20px;
     }
 
     .characteristics li{
@@ -446,7 +446,9 @@
         padding-left: 40px;
     }
 
-
+    .titlePlayRitmoMania{
+        margin-left: 20px;
+    }
 
     .characteristicsRitmoMania li span{
         font-size: 1.275rem;
@@ -457,7 +459,7 @@
 @media (max-width: 420px){
 
     .characteristicsRitmoMania h3{
-        padding-left: 10px;
+        padding-left: 20px;
     }
 
     .characteristicsRitmoMania li{
@@ -469,3 +471,54 @@
         height: 400px;
     }
 }
+
+/*=======Financiadores============*/
+
+.finances{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.finances h1{
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-family: 'Signika', sans-serif;
+    color: var(--text);
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.finances ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.finances li{
+    margin-left: 60px;
+}
+
+@media (max-width: 420px){
+
+    .finances h1{
+        width: 360px;
+        font-size: 3rem;
+    }
+
+    .finances li{
+        margin-left: 0px;
+        width: 100%;
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .finances li img{
+        margin: auto;
+    }
+
+}
+

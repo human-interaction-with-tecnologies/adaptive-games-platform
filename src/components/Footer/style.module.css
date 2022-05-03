@@ -1,0 +1,30 @@
+.footer{
+    font-size: 1.375rem;
+    font-family: 'Signika', sans-serif;
+    background: var(--blue);
+    max-width: 1570px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.footer ul {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    color: #FFFFFF;
+   
+}
+
+.footer ul li{
+    list-style:  inside;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.footer div{
+    background: var(--background);
+    font-size: 1rem;
+    text-align: center;
+    padding: 5px;
+}

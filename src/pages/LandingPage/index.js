@@ -1,14 +1,18 @@
 import Header from "../../components/Header";
-import style from "./style.module.css"
-import {ReactComponent as ImgPrincipalLP} from '../../assets/ImgPrincipalLP.svg'
-import {ReactComponent as MascoteQuebraCabeça} from '../../assets/mascoteQuebraCabeça.svg'
-import {ReactComponent as MascoteRitimoMania} from '../../assets/MascoteRitimoMania.svg'
+import Footer from "../../components/Footer/index,";
+import style from "./style.module.css";
+import {ReactComponent as ImgPrincipalLP} from '../../assets/ImgPrincipalLP.svg';
+import {ReactComponent as MascoteQuebraCabeça} from '../../assets/mascoteQuebraCabeça.svg';
+import {ReactComponent as MascoteRitimoMania} from '../../assets/MascoteRitimoMania.svg';
+import Ufpafinaces from '../../assets/Ufpa.svg';
+import CapesFinances from '../../assets/CAPES.svg';
+import CnpqFinances from '../../assets/CNPQ.svg';
+import FapespaFinances from '../../assets/FAPESPA.svg';
 const LandingPage = () =>{
     return(
-        <section className="Container">
+        <>
             <section className={style.nav}>
                 <Header/>
-
                 <section className={style.introduction}>
                     <div className={style.titulo}>
                         <span>Plataforma</span>
@@ -17,7 +21,7 @@ const LandingPage = () =>{
                     </div>
 
                     <div className={style.Img}>
-                        <ImgPrincipalLP/>
+                        <ImgPrincipalLP />
                     </div>
 
                     <div className={style.ImgEffect}>
@@ -65,7 +69,7 @@ const LandingPage = () =>{
                     </div>
 
                     <div className={style.mascoteQuebraCabeça}>
-                        <MascoteQuebraCabeça/>
+                        <MascoteQuebraCabeça />
                     </div>
                 </div>
 
@@ -106,12 +110,25 @@ const LandingPage = () =>{
                     </div>
 
                     <div className={style.mascoteRitimoMania}>
-                        <MascoteRitimoMania/>
+                        <MascoteRitimoMania />
                     </div>
                 </div>
             </section>
+
+            <section className={style.finances}>
+                <h1>Financiadores</h1>
+
+                <ul>
+                    <li><img src={Ufpafinaces } alt="" /></li>
+                    <li><img src={CapesFinances} alt="" /></li>
+                    <li><img src={CnpqFinances} alt="" /></li>
+                    <li><img src={FapespaFinances} alt="" /></li>
+                </ul>
+            </section>
+
+           <Footer  />
             
-        </section>
+        </>
     )
 }
 
