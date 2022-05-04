@@ -282,6 +282,7 @@
 
     .characteristics li{
         padding-left: 40px;
+        left: 0px;
     }
 
 
@@ -302,8 +303,8 @@
     }
 
     .characteristics li{
-        width: 240px;
-        padding-left: 10px;
+        width: 340px;
+        padding-left: 40px;
     }
 
     .mascoteQuebraCabeça > svg{
@@ -330,6 +331,8 @@
     align-items: center;
     position: relative;
     left: 40px;
+    max-width: 400px;
+    width: 100%;
 }
 
 .characteristicsRitmoMania h3{
@@ -448,6 +451,7 @@
 
     .titlePlayRitmoMania{
         margin-left: 20px;
+        max-width: 300px;
     }
 
     .characteristicsRitmoMania li span{
@@ -507,6 +511,7 @@
     .finances h1{
         width: 360px;
         font-size: 3rem;
+        margin-left: -5px;
     }
 
     .finances li{
