@@ -1,6 +1,7 @@
 {
   "conventionalCommits.scopes": [
     "create project",
-    "feat(styles/global): change in global styles"
+    "feat(styles/global): change in global styles",
+    "feat(styles): implementing styles on the landing page"
   ]
 }

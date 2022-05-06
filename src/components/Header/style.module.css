@@ -16,7 +16,7 @@
 }
 
 .nav a:hover{
-    background: #655BF5;
+    background: #7067f5;
     border-radius: 5px;
 }
 .navMobileMenu{
@@ -127,5 +127,3 @@
         transform: initial;
     } 
 }
-
-

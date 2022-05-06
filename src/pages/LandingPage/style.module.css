@@ -1,6 +1,529 @@
-.introduction{
+.Container{
+    
+    width: 100%;
+    margin: 0 auto;
+}
+.nav{
     font-family: 'Signika', sans-serif;
     background-image: linear-gradient(var(--blue-secundary), var(--blue));
+    max-width: 1570px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.introduction{
+    max-width: 1570px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "title Img"
+    "effect effect";
+    gap: 20px;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.titulo{
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    justify-content: center;
+    margin: auto;
+    grid-area: title;
+    
+}
+
+.titulo span{
+    font-size: 2.25rem;
+    position: relative;
+    margin-left: 13px;
+    line-height: 0px;
+}
+
+.titulo h1{
+    font-size: 4.125rem;
+    max-width: 300px;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
+
+.titulo p{
+    font-size: 1.375rem;
+    max-width: 400px;
+    letter-spacing: 1px;
+}
+
+.Img > *{
+    margin: 0 auto;
+    width: 100%;
+    grid-area: Img;
+}
+
+.ImgEffect{
+    grid-area: effect;
+    position: relative;
+    top: 10px;
+    height: 200px;
+    background: url('../../assets/ImgWavyEffect.svg');
+    background-size: cover;
+    width: 100%;
+}
+
+
+
+@media (max-width: 901px) {
+    .introduction{
+        margin-top: 0px;
+    }
+    .titulo{
+        padding-left: 20px;
+    }
+    .titulo span{
+        font-size: 2rem;
+    }
+    
+    .titulo h1{
+        font-size: 3.75rem;
+        max-width: 300px;
+        line-height: 70px;
+        letter-spacing: 1px;
+    }
+    
+    .titulo p{
+        font-size: 1.125rem;
+        max-width: 400px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 701px) {
+    .introduction{
+        margin-top: 0px;
+    }
+    .titulo{
+        padding-left: 20px;
+    }
+    .titulo span{
+        font-size: 1.75rem;
+    }
+    
+    .titulo h1{
+        font-size: 3.5rem;
+        max-width: 300px;
+        line-height: 60px;
+        letter-spacing: 1px;
+    }
+    
+    .titulo p{
+        font-size: 1rem;
+        max-width: 400px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 630px){
+    .introduction{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+    .titulo{
+        margin-top: 150px;
+        
+    }
+    .Img > *{
+        display: none;
+    }
+}
+
+
+/*==============section de Jogos====================*/
+
+.jogos{
+    max-width: 1200px;
+    width: 100%;
+    font-family: 'Signika', sans-serif;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.jogos h1{
+    font-size: 4rem;
+    letter-spacing: 1px;
+    color: var(--text);
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-left: 20px;
+}
+
+/*Quebra cabeça*/
+.quebracabeca{
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "none titlePlay"
+    "characteristics Img";
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.characteristics{
+    grid-area: characteristics;
+    align-items: center;
+    position: relative;
+    left: 40px;
+}
+
+.characteristics h3{
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-right: 20px;
+    width: 100%;
+}
+.characteristics ul{
+    width: 100%;
+}
+
+.characteristics li{
+    display: flex;
+    max-width: 390px;
+    width: 100%;
+    margin-bottom: 40px;
+    position: relative;
+    left: 30px;
+}
+
+.characteristics li span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  var(--blue-secundary);
+}
+
+.characteristics li span::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    background:  var(--blue-secundary);
+}
+
+.characteristics li p{
+    font-size: 1.5rem;
+    margin-left: 20px;
+    align-self: center;
+}
+
+.characteristics li button{
+    font-size: 1.625rem;
+    padding: 15px 35px;
+    width: 100%;
+    background: var(--blue-secundary);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.characteristics li button:hover{
+    background: rgba(91, 81, 232, 0.5);
+}
+
+.titlePlay{
+    position: relative;
+    right: 40px;
+    display: grid;
+    justify-content: end;
+    grid-area: titlePlay;
+    position: relative;
+    font-size: 1.5rem;
+    display: flex;
+}
+
+.titlePlay span{
+    width: 20px;
+    height: 20px;
+    background: var(--blue-secundary);
+    border-radius: 5px;
+    margin-right: 10px;
+    align-self: center
+}
+
+.mascoteQuebraCabeça{
+    grid-area: Img;
+    max-height: 650;
+}
+
+.mascoteQuebraCabeça > svg{
+    width: 100%;
+}
+
+
+@media (max-width: 891px) {
+    .quebracabeca{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "titlePlay"
+        "Img"
+        "characteristics";
+    }
+
+    .characteristics{
+        position: relative;
+        left: 0px;
+    }
+
+    .characteristics h3{
+        padding-left: 40px;
+    }
+
+    .characteristics li{
+        padding-left: 40px;
+        left: 0px;
+    }
+
+
+
+    .characteristics li span{
+        font-size: 1.275rem;
+    }
+
+}
+
+@media (max-width: 420px){
+    .jogos h1{
+        font-size: 3rem;
+    }
+
+    .characteristics h3{
+        padding-left: 20px;
+    }
+
+    .characteristics li{
+        width: 340px;
+        padding-left: 40px;
+    }
+
+    .mascoteQuebraCabeça > svg{
+        height: 400px;
+    }
+}
+
+/*Ritmo Mania*/
+
+.ritmoMania{
+    max-width: 1200px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "titlePlayRitmoMania none"
+    "imgRitimoMania characteristicsRitmoMania";
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.characteristicsRitmoMania{
+    grid-area: characteristicsRitmoMania;
+    align-items: center;
+    position: relative;
+    left: 40px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.characteristicsRitmoMania h3{
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.characteristicsRitmoMania ul{
+    width: 100%;
+}
+
+.characteristicsRitmoMania li{
+    display: flex;
+    max-width: 390px;
+    width: 100%;
+    margin-bottom: 40px;
+    position: relative;
+    left: 30px;
+}
+
+.characteristicsRitmoMania li span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  var(--green);
+}
+
+.characteristicsRitmoMania li span::after{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 5px;
+    background: var(--green);
+}
+
+.characteristicsRitmoMania li p{
+    font-size: 1.5rem;
+    margin-left: 20px;
+    align-self: center;
+}
+
+.characteristicsRitmoMania li button{
+    font-size: 1.625rem;
+    padding: 15px 35px;
+    width: 100%;
+    background: var(--green);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.characteristicsRitmoMania li button:hover{
+    background: rgba(41, 179, 182, 0.5);
+    
+}
+
+.titlePlayRitmoMania{
+    margin-top: 60px;
+    position: relative;
+    left: 20px;
+    display: grid;
+    justify-content: start;
+    grid-area: titlePlayRitmoMania;
+    position: relative;
+    font-size: 1.5rem;
+    display: flex;
+}
+
+
+
+.titlePlayRitmoMania span{
+    width: 20px;
+    height: 20px;
+    background: var(--green);
+    border-radius: 5px;
+    margin-right: 10px;
+    align-self: center
+}
+
+.mascoteRitimoMania{
+    grid-area: imgRitimoMania;
+    max-height: 650;
+}
+
+.mascoteRitimoMania > svg{
+    width: 100%;
+}
+
+
+@media (max-width: 891px) {
+    .ritmoMania{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "titlePlayRitmoMania"
+        "imgRitimoMania"
+        "characteristicsRitmoMania";
+    }
+
+    .characteristicsRitmoMania{
+        position: relative;
+        left: 0px;
+    }
+
+    .characteristicsRitmoMania h3{
+        padding-left: 40px;
+    }
+
+    .characteristicsRitmoMania li{
+        padding-left: 40px;
+    }
+
+    .titlePlayRitmoMania{
+        margin-left: 20px;
+        max-width: 300px;
+    }
+
+    .characteristicsRitmoMania li span{
+        font-size: 1.275rem;
+    }
+
+}
+
+@media (max-width: 420px){
+
+    .characteristicsRitmoMania h3{
+        padding-left: 20px;
+    }
+
+    .characteristicsRitmoMania li{
+        width: 240px;
+        padding-left: 10px;
+    }
+
+    .mascoteRitimoMania > svg{
+        height: 400px;
+    }
+}
+
+/*=======Financiadores============*/
+
+.finances{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.finances h1{
+    font-size: 4rem;
+    letter-spacing: 1px;
+    font-family: 'Signika', sans-serif;
+    color: var(--text);
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.finances ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.finances li{
+    margin-left: 60px;
+}
+
+@media (max-width: 420px){
+
+    .finances h1{
+        width: 360px;
+        font-size: 3rem;
+        margin-left: -5px;
+    }
+
+    .finances li{
+        margin-left: 0px;
+        width: 100%;
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .finances li img{
+        margin: auto;
+    }
 
 }
 
