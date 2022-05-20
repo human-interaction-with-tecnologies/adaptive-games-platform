@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import {Link} from 'react-router-dom';
 import useMedia from '../../Hooks/useMedia';
 import styles from './style.module.css';
 
@@ -40,9 +41,7 @@ const Header = () =>{
                 <a href="#" >
                     Financiadores
                 </a>
-                <button className={styles.btnLoginHeader} onClick={()=>{
-                    setMobileMenu(false)
-                }}>Login</button>
+                <Link className={styles.btnLoginHeader} to='/login'>Login</Link>
             </nav>
         </>
     )
