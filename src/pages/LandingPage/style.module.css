@@ -221,7 +221,7 @@
     font-size: 1.625rem;
     padding: 15px 35px;
     width: 100%;
-    background: var(--blue-secundary);
+    background: #5B51E8;
     color: #FFFFFF;
     border: none;
     border-radius: 20px;
@@ -229,7 +229,7 @@
 }
 
 .characteristics li button:hover{
-    background: rgba(91, 81, 232, 0.5);
+    background: #756BFF;
 }
 
 .titlePlay{
@@ -381,7 +381,7 @@
     font-size: 1.625rem;
     padding: 15px 35px;
     width: 100%;
-    background: var(--green);
+    background: #50CFD3;
     color: #FFFFFF;
     border: none;
     border-radius: 20px;
@@ -390,7 +390,7 @@
 
 
 .characteristicsRitmoMania li button:hover{
-    background: rgba(41, 179, 182, 0.5);
+    background: #6ED2DB;
     
 }
 

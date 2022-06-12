@@ -37,11 +37,11 @@ const Header = () =>{
                 ${mobile ? styles.navMobileMenu : styles.nav}
                 ${mobileMenu && styles.navMobileActive }
             `}>
-                <a href="#">Jogos</a>
-                <a href="#" >
+                <a href="#" className={styles.link}>Jogos</a>
+                <a href="#" className={styles.link}>
                     Financiadores
                 </a>
-                <Link className={styles.btnLoginHeader} to='/login'>Login</Link>
+                <a className={styles.btnLoginHeader} href="/login">Login</a>
             </nav>
         </>
     )

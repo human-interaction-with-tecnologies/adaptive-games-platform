@@ -15,7 +15,7 @@
     color: #FFFFFF;
 }
 
-.nav a:hover{
+.link:hover{
     background: #7067f5;
     border-radius: 5px;
 }
@@ -99,7 +99,7 @@
 
 .btnLoginHeader{
     padding: 10px 20px;
-    background: var(--green);
+    background: #50CFD3;
     border-radius: 5px;
     border: none;
     color: #FFFFFF;
@@ -108,7 +108,7 @@
 }
 
 .btnLoginHeader:hover{
-    background: #48c5cc;
+    background: #6ED2DB;
 }
 
 
